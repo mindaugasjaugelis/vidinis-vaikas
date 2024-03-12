@@ -5,12 +5,10 @@ subtitle: Kontaktai
 imageUrl: /assets/img/kontaktai.png
 ---
 
+### Kristina Švažienė
+<strong>Telefonas:</strong> +37067964067<br>
+<strong>El.paštas:</strong> svaziene.kristina@gmail.com
+
 ### Dovilė Jaugelienė
-<strong>Telefonas:</strong> +370 666 22222
-
+<strong>Telefonas:</strong> +370 655 20785<br>
 <strong>El.paštas:</strong> jaugeliene.do@gmail.com
-
-### Kristina Kristina
-<strong>Telefonas:</strong> +370 666 22222
-
-<strong>El.paštas:</strong> kristina.kristina@gmail.com
