@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 
-subtitle: Kristina Kristina
+subtitle: Kristina Švažienė
 ---
 
 ### Apie mane
