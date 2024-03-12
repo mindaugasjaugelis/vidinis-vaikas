@@ -12,3 +12,6 @@ imageUrl: /assets/img/kontaktai.png
 ### Dovilė Jaugelienė
 <strong>Telefonas:</strong> +370 655 20785<br>
 <strong>El.paštas:</strong> jaugeliene.do@gmail.com
+
+### Adresas
+Savanorių pr. 375, Kaunas. Kalniečių PC, 4 aukštas. Ieškoti iškabos „Vidinis vaikas“.
