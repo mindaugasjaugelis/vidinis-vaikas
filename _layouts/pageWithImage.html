@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% include page/title.html %}
+
+{% if page.imageUrl %} 
+<div class="page-with-image-content">
+    <div class="page-img-container">
+        <img src="{{ page.imageUrl | prepend: site.baseurl }}" class="page-img">
+    </div>
+    <div>
+        {{ content }}
+    </div>
+    {% else %} 
+        {{ content }}
+    {% endif %}
+</div>
+
+{% include page/about.html %}
