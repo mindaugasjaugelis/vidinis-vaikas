@@ -21,6 +21,3 @@ supratus ir išgyvenus, galima tikėtis pokyčio.
 **2016m. – dabar** šeimos klinikoje “Sveikatos ratas” medicinos psichologė.<br>
 **2016m. – 2019m.** VšĮ Raseinių psichikos sveikatos centre medicinos psichologė.<br>
 **2018m. – 2022m.** šeimos klinikos „InMedica“ psichikos sveikatos centre medicinos psichologė.
-
-### Seminarai, konferencijos, mokymai
-- Bus pridėta netrukus
