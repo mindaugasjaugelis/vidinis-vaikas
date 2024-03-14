@@ -3,7 +3,7 @@ layout: pageWithImage
 title:
 subtitle: Kontaktai
 imageUrl: /assets/img/kontaktai.png
-imageClickLink: https://www.google.com/maps/place/Kalnie%C4%8Di%C5%B3+PC/@54.9244921,23.9605383,17z/data=!3m1!4b1!4m6!3m5!1s0x46e71915e6cbdf2b:0x7dad30fe0ecf42e6!8m2!3d54.924489!4d23.9631132!16s%2Fg%2F11r8c1979r?entry=ttu
+imageClickLink: https://maps.app.goo.gl/GAxzw1dxAzYbSxuYA
 ---
 
 ### Kristina Švažienė
