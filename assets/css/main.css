@@ -51,7 +51,8 @@ blockquote p {
 }
 
 strong {
-  color: #16a085;
+  color: #5a7e2a;
+  /* 16a085 */
 }
 
 .wrapper {
@@ -68,11 +69,16 @@ strong {
   float: left;
 }
 
+/* Remove */
 .logo {
   font-size: 260%;
   font-weight: 700;
   color: #16a085;
   display: block;
+}
+
+.logo-text {
+  width: 200px;
 }
 
 .menu {
@@ -123,6 +129,7 @@ strong {
   font-weight: 400;
   font-size: 75%;
   color: #828282;
+  /* color: #5a7e2a; */
 }
 
 /* =Post teasers */ /*************************************************************/
@@ -233,8 +240,8 @@ strong {
 
 /* =Small screen */ /*************************************************************/
 @media (max-width: 851px) {
-  .logo {
-    padding-left: 20px;
+  .logo-text-link {
+    text-align: -webkit-center;
   }
 
   .menu {
@@ -324,6 +331,7 @@ strong {
     padding-left: 0px;
   }
 
+  /* Remove */
   .logo {
     padding-left: 0px;
   }
