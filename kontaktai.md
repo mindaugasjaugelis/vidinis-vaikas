@@ -8,14 +8,14 @@ imageClickLink: https://maps.app.goo.gl/GAxzw1dxAzYbSxuYA
 
 ### Kristina Švažienė
 <strong>Telefonas:</strong> +370 679 64067<br>
-<strong>El. paštas:</strong> svaziene.kristina@gmail.com<br>
+El. paštas:<a href="mailto:svaziene.kristina@gmail.com"> svaziene.kristina@gmail.com</a><br>
 Konsultuojami asmenys nuo 18 m. amžiaus.<br>
 <strong>Sesijos kaina:</strong> 40€<br>
 <strong>Sesijos trukmė:</strong> 50min.<br>
 
 ### Dovilė Jaugelienė
 <strong>Telefonas:</strong> +370 655 20785<br>
-<strong>El. paštas:</strong> jaugeliene.do@gmail.com<br>
+El. paštas:<a href="mailto:jaugeliene.do@gmail.com"> jaugeliene.do@gmail.com</a><br>
 Konsultuojami asmenys nuo 16 m. amžiaus.<br>
 <strong>Sesijos kaina:</strong> 50€<br>
 <strong>Sesijos trukmė:</strong> 50min.<br>
