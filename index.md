@@ -8,7 +8,7 @@ sitemap:
 
 <div id="index-container">
 	<div id="describe-text">
-	<img src="{{ '/assets/img/logo.png' | prepend: site.baseurl }}" id="about-img">
+	<!-- <img src="{{ '/assets/img/logo.png' | prepend: site.baseurl }}" id="about-img"> -->
 	<div class="about">
 		<div class="about__divider">*****</div>
 	</div>
