@@ -337,7 +337,7 @@ strong {
   }
 
   .menu__entry {
-    margin-right: 19px;
+    margin-right: 18px;
   }
 }
 /* Custom */
@@ -345,7 +345,7 @@ strong {
   text-align: center;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 359px) {
   .menu {
     display: flex;
     flex-direction: column;
@@ -354,6 +354,6 @@ strong {
   }
 
   .menu__entry {
-    margin-right: 25px;
+    margin-right: 18px;
   }
 }

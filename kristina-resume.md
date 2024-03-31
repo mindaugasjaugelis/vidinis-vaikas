@@ -13,9 +13,9 @@ turėti dabartiniam gyvenimui, esamai savijautai. Manau, kad niekas nevyksta be 
 supratus ir išgyvenus, galima tikėtis pokyčio.
 
 ### Patirtis
-**2016m. – dabar** šeimos klinikoje “Sveikatos ratas” medicinos psichologė.<br>
-**2016m. – 2019m.** VšĮ Raseinių psichikos sveikatos centre medicinos psichologė.<br>
-**2018m. – 2022m.** šeimos klinikos „InMedica“ psichikos sveikatos centre medicinos psichologė.
+**2016 m. – dabar** šeimos klinikoje “Sveikatos ratas” medicinos psichologė.<br>
+**2016 m. – 2019 m.** VšĮ Raseinių psichikos sveikatos centre medicinos psichologė.<br>
+**2018 m. – 2022 m.** šeimos klinikos „InMedica“ psichikos sveikatos centre medicinos psichologė.
 
 ### Išsilavinimas
 Individuali psichodinaminė psichoterapija Vilniaus universiteto Medicinos fakultete (dabar).<br>
