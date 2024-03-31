@@ -12,12 +12,15 @@ galimybė susipažinti ir tyrinėti jautriausius vidinius išgyvenimus. Taip pat
 turėti dabartiniam gyvenimui, esamai savijautai. Manau, kad niekas nevyksta be priežasties. Tik
 supratus ir išgyvenus, galima tikėtis pokyčio.
 
-### Išsilavinimas
-- Individuali psichodinaminė psichoterapija Vilniaus universiteto Medicinos fakultete (dabar).
-- Sveikatos psichologijos magistro laipsnis, VDU.
-- Psichologijos bakalauro laipsnis, VDU.
-
 ### Patirtis
 **2016m. – dabar** šeimos klinikoje “Sveikatos ratas” medicinos psichologė.<br>
 **2016m. – 2019m.** VšĮ Raseinių psichikos sveikatos centre medicinos psichologė.<br>
 **2018m. – 2022m.** šeimos klinikos „InMedica“ psichikos sveikatos centre medicinos psichologė.
+
+### Išsilavinimas
+Individuali psichodinaminė psichoterapija Vilniaus universiteto Medicinos fakultete (dabar).<br>
+Sveikatos psichologijos magistro laipsnis, VDU.<br>
+Psichologijos bakalauro laipsnis, VDU.
+
+### Psichoterapijos kryptis
+Individuali psichodinaminė psichoterapija.
