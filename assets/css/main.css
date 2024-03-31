@@ -246,6 +246,7 @@ strong {
 
   .menu {
     padding-left: 20px;
+    text-align: center;
   }
 
   .page-with-image-content {
@@ -327,7 +328,6 @@ strong {
 
 @media (max-width: 420px) {
   .menu {
-    display: flex;
     padding-left: 0px;
   }
 
@@ -337,10 +337,23 @@ strong {
   }
 
   .menu__entry {
-    margin-right: 25px;
+    margin-right: 19px;
   }
 }
 /* Custom */
 .go-home {
   text-align: center;
+}
+
+@media (max-width: 360px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 60px;
+  }
+
+  .menu__entry {
+    margin-right: 25px;
+  }
 }
