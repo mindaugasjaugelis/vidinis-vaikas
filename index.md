@@ -1,7 +1,7 @@
 ---
 layout: homePage
-title: 
-subtitle: Psichoterapija
+title: Psichoterapija
+subtitle: 
 sitemap:
   priority: 0.9
 description :

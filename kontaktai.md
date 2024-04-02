@@ -1,7 +1,7 @@
 ---
 layout: pageWithImage
-title: Psichoterapija
-subtitle: Kontaktai
+title: Kontaktai
+subtitle: Psichoterapija
 imageUrl: /assets/img/kontaktai.png
 imageClickLink: https://maps.app.goo.gl/GAxzw1dxAzYbSxuYA
 description :
