@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 
+title: Psichoterapija
 subtitle: Kristina Švažienė
+description :
 ---
 
 ### Apie mane

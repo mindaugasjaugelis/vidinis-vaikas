@@ -1,9 +1,10 @@
 ---
 layout: pageWithImage
-title:
+title: Psichoterapija
 subtitle: Kontaktai
 imageUrl: /assets/img/kontaktai.png
 imageClickLink: https://maps.app.goo.gl/GAxzw1dxAzYbSxuYA
+description :
 ---
 
 ### Kristina Švažienė

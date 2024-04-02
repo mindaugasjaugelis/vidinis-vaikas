@@ -1,7 +1,8 @@
 ---
 layout: page
-title: 
+title: Psichoterapeutė
 subtitle: Dovilė Jaugelienė
+description :
 ---
 
 ### Apie mane

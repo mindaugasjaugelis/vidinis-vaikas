@@ -1,9 +1,10 @@
 ---
 layout: homePage
 title: 
-subtitle: 
+subtitle: Psichoterapija
 sitemap:
   priority: 0.9
+description :
 ---
 
 <div id="index-container">
