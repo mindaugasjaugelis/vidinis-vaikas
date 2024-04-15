@@ -231,11 +231,13 @@ strong {
 
 .page-img {
   width: 400px;
+  border-radius: 40px;
 }
 
 .page-img-container {
   float: right;
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 /* =Small screen */ /*************************************************************/
@@ -265,9 +267,9 @@ strong {
     width: 100%;
   }
 
-  .page-with-image-content .page-content-container {
+  /* .page-with-image-content .page-content-container {
     text-align: center;
-  }
+  } */
 }
 
 @media (max-width: 510px) {
