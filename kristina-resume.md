@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: pageWithImage
 title: Psichoterapija
 subtitle: Kristina Švažienė
+imageUrl: /assets/img/kristina.jpg
 description :
 ---
 
