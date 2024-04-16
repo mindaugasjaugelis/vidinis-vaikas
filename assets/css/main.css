@@ -242,7 +242,7 @@ strong {
 
 .contacts-map {
   width: 470px;
-  height: 400px;
+  height: 470px;
   border-radius: 40px;
 }
 
@@ -274,7 +274,7 @@ strong {
 
   .contacts-map {
     width: 500px;
-    height: 430px;
+    height: 500px;
   }
 }
 
@@ -335,7 +335,7 @@ strong {
 
   .contacts-map {
     width: 380px;
-    height: 340px;
+    height: 380px;
   }
 }
 
@@ -355,7 +355,7 @@ strong {
 
   .contacts-map {
     width: 330px;
-    height: 260px;
+    height: 330px;
   }
 }
 /* Custom */
@@ -375,6 +375,6 @@ strong {
 
   .contacts-map {
     width: 300px;
-    height: 250px;
+    height: 300px;
   }
 }
