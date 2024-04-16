@@ -3,7 +3,7 @@ layout: pageWithImage
 title: Psichoterapeutė
 subtitle: Dovilė Jaugelienė
 imageUrl: /assets/img/dovile.jpg
-description :
+description : Patikima psichoterapeutė, pasirengusi padėti Jums. Specializuojasi individualiose konsultacijose, kurios skatina jūsų emocinę gerovę ir asmeninį augimą.
 ---
 
 ### Apie mane

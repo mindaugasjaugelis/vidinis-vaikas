@@ -2,7 +2,7 @@
 layout: contactsPage
 title: Kontaktai
 subtitle: Psichoterapija
-description :
+description : "Dovilė jaugelienė, Tel.: +370 65520785. Kristina Švažienė, Tel.: +370 679 64067"
 ---
 
 ### Kristina Švažienė

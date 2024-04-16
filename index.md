@@ -4,7 +4,7 @@ title: Psichoterapija
 subtitle: 
 sitemap:
   priority: 0.9
-description :
+description : Profesionalios psichoterapijos paslaugos Jūsų emocinei gerovei. Individualios, konfidencialios konsultacijos Kaune.
 ---
 
 <div id="index-container">
