@@ -6,13 +6,71 @@
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-MR7E7H1WLM">
-</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MR7E7H1WLM"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  function gtag(){
+    dataLayer.push(arguments);
+  }
 
-  gtag('config', 'G-MR7E7H1WLM');
-</script> -->
+  function isGtmCookieSet() {
+  var cookies = document.cookie.split(';');
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].trim();
+    if (cookie.indexOf('_ga') === 0 || cookie.indexOf('_gid') === 0 || cookie.indexOf('_gat') === 0) {
+      return true; // GTM cookie is set
+    }
+  }
+  return false; // GTM cookie is not set
+}
+
+function clearCookies() {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      var eqPos = cookie.indexOf('=');
+      var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+      document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+    }
+  }
+
+  // Function to clear local storage
+  function clearLocalStorage() {
+    localStorage.clear();
+  }
+
+  $(document).ready(function() {
+    var cookiePopupWrapper = $('#cookie-popup-wrapper');
+    var cookiePopup = $('#cookie-popup');
+    var acceptBtn = $('#accept-btn');
+    var rejectBtn = $('#reject-btn');
+
+    if (!localStorage.getItem('cookieConsent') || !isGtmCookieSet()) {
+      cookiePopupWrapper.show();
+    }
+
+    acceptBtn.click(function() {
+      localStorage.setItem('cookieConsent', true);
+      gtag('js', new Date());
+      gtag('config', 'G-MR7E7H1WLM');
+      cookiePopupWrapper.hide();
+    });
+
+    rejectBtn.click(function() {
+      clearCookies();
+      clearLocalStorage();
+      cookiePopupWrapper.hide();
+    });
+  });
+</script>
+
+<div id="cookie-popup-wrapper" style="display: none;">
+  <div id="cookie-popup">
+    <p>Mes naudojame neprivalomus slapukus, kad pagerintume jūsų naršymo patirtį mūsų svetainėje. Šie slapukai padeda mums suprasti, kaip jūs sąveikaujate su mūsų svetaine ir leidžia mums gerinti jos funkcionalumą. Daugiau informacijos galite rasti mūsų Privatumo politikoje.</p>
+    <button id="accept-btn">Sutikti</button>
+    <button id="reject-btn">Atmesti</button>
+  </div>
+</div>
