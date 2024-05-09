@@ -1,75 +1,120 @@
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title %} {{ page.title }} {% endif %} | {% if page.subtitle %} {{ page.subtitle }} | {% endif %} {{ site.title }}</title>
-<meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+  {% if page.title %} {{ page.title }} {% endif %} | {% if page.subtitle %} {{
+  page.subtitle }} | {% endif %} {{ site.title }}
+</title>
+<meta
+  name="description"
+  content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+/>
+{% if page.tags %}<meta
+  name="keywords"
+  content="{{ page.tags | join: ', ' }}"
+/>{% endif %}
+<link
+  rel="canonical"
+  href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}"
+/>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MR7E7H1WLM"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-MR7E7H1WLM"
+></script>
 
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){
+  function gtag() {
     dataLayer.push(arguments);
   }
 
-  function isGtmCookieSet() {
-  var cookies = document.cookie.split(';');
-  for (var i = 0; i < cookies.length; i++) {
-    var cookie = cookies[i].trim();
-    if (cookie.indexOf('_ga') === 0 || cookie.indexOf('_gid') === 0 || cookie.indexOf('_gat') === 0) {
-      return true; // GTM cookie is set
-    }
+  function acceptPolicy() {
+    localStorage.setItem("cookieConsent", true);
+    gtag("js", new Date());
+    gtag("config", "G-MR7E7H1WLM");
   }
-  return false; // GTM cookie is not set
-}
 
-function clearCookies() {
-    var cookies = document.cookie.split(';');
+  function isGtmCookieSet() {
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      if (
+        cookie.indexOf("_ga") === 0 ||
+        cookie.indexOf("_gid") === 0 ||
+        cookie.indexOf("_gat") === 0
+      ) {
+        return true; // GTM cookie is set
+      }
+    }
+    return false; // GTM cookie is not set
+  }
+
+  function isPrivacyPolicyPageActive() {
+    return window.location.href.indexOf('privatumas') > -1;
+  }
+
+  function clear() {
+    clearCookies();
+    clearLocalStorage();
+  }
+
+  function clearCookies() {
+    var cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
       var cookie = cookies[i];
-      var eqPos = cookie.indexOf('=');
+      var eqPos = cookie.indexOf("=");
       var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-      document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+      document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
     }
   }
 
-  // Function to clear local storage
   function clearLocalStorage() {
     localStorage.clear();
   }
 
-  $(document).ready(function() {
-    var cookiePopupWrapper = $('#cookie-popup-wrapper');
-    var cookiePopup = $('#cookie-popup');
-    var acceptBtn = $('#accept-btn');
-    var rejectBtn = $('#reject-btn');
+  $(document).ready(function () {
+    var cookiePopupWrapper = $("#cookie-popup-wrapper");
+    var cookiePopup = $("#cookie-popup");
+    var acceptBtn = $("#accept-btn");
+    var rejectBtn = $("#reject-btn");
 
-    if (!localStorage.getItem('cookieConsent') || !isGtmCookieSet()) {
+    if ((!localStorage.getItem("cookieConsent") || !isGtmCookieSet()) && !isPrivacyPolicyPageActive()) {
       cookiePopupWrapper.show();
     }
 
-    acceptBtn.click(function() {
-      localStorage.setItem('cookieConsent', true);
-      gtag('js', new Date());
-      gtag('config', 'G-MR7E7H1WLM');
+    acceptBtn.click(function () {
+      acceptPolicy();
       cookiePopupWrapper.hide();
     });
 
-    rejectBtn.click(function() {
-      clearCookies();
-      clearLocalStorage();
+    rejectBtn.click(function () {
+      clear();
+      cookiePopupWrapper.hide();
+    });
+
+    $("#linkToPrivacyPolicy").click(function () {
       cookiePopupWrapper.hide();
     });
   });
 </script>
 
-<div id="cookie-popup-wrapper" style="display: none;">
+<div id="cookie-popup-wrapper" style="display: none">
   <div id="cookie-popup">
-    <p>Mes naudojame neprivalomus slapukus, kad pagerintume jūsų naršymo patirtį mūsų svetainėje. Šie slapukai padeda mums suprasti, kaip jūs sąveikaujate su mūsų svetaine ir leidžia mums gerinti jos funkcionalumą. Daugiau informacijos galite rasti mūsų Privatumo politikoje.</p>
+    <p>
+      Mes naudojame neprivalomus slapukus, kad pagerintume jūsų naršymo patirtį
+      mūsų svetainėje. Šie slapukai padeda mums suprasti, kaip jūs sąveikaujate
+      su mūsų svetaine ir leidžia mums gerinti jos funkcionalumą. Daugiau
+      informacijos galite rasti mūsų
+      <a
+        id="linkToPrivacyPolicy"
+        href="{{ '/privatumas' | prepend: site.baseurl }}"
+        style="font-weight: 100"
+        >Privatumo politikoje</a
+      >.
+    </p>
     <button id="accept-btn">Sutikti</button>
     <button id="reject-btn">Atmesti</button>
   </div>
