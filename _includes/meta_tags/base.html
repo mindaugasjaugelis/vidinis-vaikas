@@ -37,6 +37,10 @@
     gtag("config", "G-MR7E7H1WLM");
   }
 
+  function rejectPolicy() {
+    localStorage.setItem("cookieConsent", false);
+  }
+
   function isGtmCookieSet() {
     var cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
@@ -81,17 +85,24 @@
     var acceptBtn = $("#accept-btn");
     var rejectBtn = $("#reject-btn");
 
-    if ((!localStorage.getItem("cookieConsent") || !isGtmCookieSet()) && !isPrivacyPolicyPageActive()) {
+    var cookieConsentValue = localStorage.getItem("cookieConsent")
+    if(cookieConsentValue == null){
+      clear();
+    }
+
+    if (cookieConsentValue == null && !isPrivacyPolicyPageActive()) {
       cookiePopupWrapper.show();
     }
 
     acceptBtn.click(function () {
+      clear();
       acceptPolicy();
       cookiePopupWrapper.hide();
     });
 
     rejectBtn.click(function () {
       clear();
+      rejectPolicy();
       cookiePopupWrapper.hide();
     });
 
@@ -115,7 +126,7 @@
         >Privatumo politikoje</a
       >.
     </p>
-    <button id="accept-btn">Sutikti</button>
+    <button id="accept-btn">Priimti</button>
     <button id="reject-btn">Atmesti</button>
   </div>
 </div>
