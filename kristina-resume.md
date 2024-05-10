@@ -3,6 +3,7 @@ layout: pageWithImage
 title: Psichoterapija
 subtitle: Kristina Švažienė
 imageUrl: /assets/img/kristina.jpg
+imageAlt: Psichologė psichoterapeutė kandidatė Kristina Švažienė Kaunas
 description : "Psichologė psichoterapeutė kandidatė Kristina Švažienė. Remdamasi psichodinaminiu požiūriu teikia individualias konsultacijas suaugusiems asmenims išgyvenantiems įvairius psichologinius sunkumus bei norintiems geriau suprasti save."
 ---
 

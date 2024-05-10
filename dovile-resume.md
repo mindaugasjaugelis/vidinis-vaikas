@@ -3,6 +3,7 @@ layout: pageWithImage
 title: Psichoterapeutė
 subtitle: Dovilė Jaugelienė
 imageUrl: /assets/img/dovile.jpg
+imageAlt: Psichoterapeutė Dovilė Jaugelienė Kaunas
 description : Patikima psichoterapeutė, pasirengusi padėti Jums. Specializuojasi individualiose konsultacijose, kurios skatina jūsų emocinę gerovę ir asmeninį augimą.
 ---
 
