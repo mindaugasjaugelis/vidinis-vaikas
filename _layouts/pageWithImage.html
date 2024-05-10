@@ -7,10 +7,10 @@ layout: default
     <div class="page-img-container">
         {%if page.imageClickLink%}
             <a href="{{ '/' | prepend: page.imageClickLink }}" class="logo-text-link" target="_blank">
-                <img src="{{ page.imageUrl | prepend: site.baseurl }}" class="page-img">
+                <img src="{{ page.imageUrl | prepend: site.baseurl }}" class="page-img" alt="{{ page.imageAlt }}">
             </a>
         {% else %} 
-            <img src="{{ page.imageUrl | prepend: site.baseurl }}" class="page-img">
+            <img src="{{ page.imageUrl | prepend: site.baseurl }}" class="page-img" alt="{{ page.imageAlt }}">
         {% endif %}
     </div>
     <div class="page-content-container">

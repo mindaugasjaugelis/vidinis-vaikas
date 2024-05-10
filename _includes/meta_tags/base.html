@@ -31,14 +31,19 @@
     dataLayer.push(arguments);
   }
 
+  function addLocalStorageConsent(value) {
+    var consentObject = { value: value, timestamp: new Date().getTime() };
+    localStorage.setItem("cookieConsent", JSON.stringify(consentObject));
+  }
+
   function acceptPolicy() {
-    localStorage.setItem("cookieConsent", true);
+    addLocalStorageConsent(true);
     gtag("js", new Date());
     gtag("config", "G-MR7E7H1WLM");
   }
 
   function rejectPolicy() {
-    localStorage.setItem("cookieConsent", false);
+    addLocalStorageConsent(false);
   }
 
   function isGtmCookieSet() {
@@ -57,7 +62,7 @@
   }
 
   function isPrivacyPolicyPageActive() {
-    return window.location.href.indexOf('privatumas') > -1;
+    return window.location.href.indexOf("privatumas") > -1;
   }
 
   function clear() {
@@ -85,11 +90,23 @@
     var acceptBtn = $("#accept-btn");
     var rejectBtn = $("#reject-btn");
 
-    var cookieConsentValue = localStorage.getItem("cookieConsent")
-    if(cookieConsentValue == null){
+    var cookieConsentValue = localStorage.getItem("cookieConsent");
+    if (cookieConsentValue == null) {
       clear();
     }
 
+    if (cookieConsentValue != null) {
+      var object = JSON.parse(localStorage.getItem("cookieConsent"));
+      if (object.value == false) {
+        oneDayOldDate = new Date().getTime() - (7 * 24 * 60 * 60 * 1000);
+        consentDate = object.timestamp;
+        if(consentDate <= oneDayOldDate) {
+          clear();
+        }
+      }
+    }
+
+    var cookieConsentValue = localStorage.getItem("cookieConsent");
     if (cookieConsentValue == null && !isPrivacyPolicyPageActive()) {
       cookiePopupWrapper.show();
     }
