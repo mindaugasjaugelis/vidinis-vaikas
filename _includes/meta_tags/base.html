@@ -19,13 +19,41 @@
 />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Google tag (gtag.js) -->
-<script
+<script>   
+  function clearCookies() {
+    var cookies = document.cookie.split("; ");
+    for (var c = 0; c < cookies.length; c++) {
+        var d = window.location.hostname.split(".");
+        while (d.length > 0) {
+            var cookieBase = encodeURIComponent(cookies[c].split(";")[0].split("=")[0]) + '=; expires=Thu, 01-Jan-1970 00:00:01 GMT; domain=' + d.join('.') + ' ;path=';
+            var p = location.pathname.split('/');
+            document.cookie = cookieBase + '/';
+            while (p.length > 0) {
+                document.cookie = cookieBase + p.join('/');
+                p.pop();
+            };
+            d.shift();
+        }
+    }
+  }
+
+  function clearLocalStorage() {
+    localStorage.clear();
+  }
+
+  $(document).ready(function () {
+    clearCookies();
+    clearLocalStorage();
+  });
+</script>
+
+<!-- Cookies consent functionality -->
+<!-- <script
   async
   src="https://www.googletagmanager.com/gtag/js?id=G-MR7E7H1WLM"
-></script>
+></script> -->
 
-<script>
+<!-- <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
@@ -44,21 +72,6 @@
 
   function rejectPolicy() {
     addLocalStorageConsent(false);
-  }
-
-  function isGtmCookieSet() {
-    var cookies = document.cookie.split(";");
-    for (var i = 0; i < cookies.length; i++) {
-      var cookie = cookies[i].trim();
-      if (
-        cookie.indexOf("_ga") === 0 ||
-        cookie.indexOf("_gid") === 0 ||
-        cookie.indexOf("_gat") === 0
-      ) {
-        return true; // GTM cookie is set
-      }
-    }
-    return false; // GTM cookie is not set
   }
 
   function isPrivacyPolicyPageActive() {
@@ -153,4 +166,4 @@
     <button id="accept-btn">Priimti</button>
     <button id="reject-btn">Atmesti</button>
   </div>
-</div>
+</div> -->
