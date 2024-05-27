@@ -231,7 +231,7 @@ strong {
 
 .page-img {
   width: 400px;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 .page-img-container, .contacts-map-container {
@@ -243,7 +243,7 @@ strong {
 .contacts-map {
   width: 470px;
   height: 470px;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 
 /* =Small screen */ /*************************************************************/

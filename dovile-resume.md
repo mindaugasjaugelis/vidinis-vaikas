@@ -23,7 +23,7 @@ Mano tikslas: padėti žmonėms atrasti laisvę suprasti kas vyksta jų vidiniam
 **2012 m. – 2018 m.** Vilniaus universitetas, Medicinos fakultetas, podiplominės Individualios psichodinaminės psichoterapijos studijos.<br>
 **2012 m. – 2016 m.** Lietuvos sveikatos mokslų universitetas, Psichiatrijos klinika, Vaikų ir paauglių psichiatrijos rezidentūra.<br>
 **2006 m. – 2012 m.** Lietuvos sveikatos mokslų universitetas, Medicinos akademija, Medicinos fakultetas, vientisosios medicinos studijos.<br>
-Nuolat tobulinuosi vietinėse ir tarptautinėse konferencijose. Esu Lietuvos psichoterapijos draugijos narė.
+Nuolat tobulinuosi vietinėse ir tarptautinėse konferencijose. Esu Lietuvos psichoanalizės draugijos narė.
 
 ### Psichoterapijos kryptis
 Individuali psichodinaminė psichoterapija.
