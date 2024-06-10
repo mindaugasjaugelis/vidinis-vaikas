@@ -1,43 +1,24 @@
 ---
 layout: homePage
 title: Psichoterapija
-subtitle: 
+subtitle:
 sitemap:
   priority: 0.9
-description : Profesionalios psichoterapijos paslaugos Jūsų emocinei gerovei. Individualios, konfidencialios konsultacijos Kaune.
+description: Profesionalios psichoterapijos paslaugos Jūsų emocinei gerovei. Individualios, konfidencialios konsultacijos Kaune.
 ---
 
 <div id="index-container">
 	<div id="describe-text">
 		<!-- <img src="{{ '/assets/img/index.jpg' | prepend: site.baseurl }}" class="page-img" style="width: auto;" alt="{{ page.imageAlt }}"> -->
-<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
-<div
-  id="blueimp-gallery-carousel"
-  class="blueimp-gallery blueimp-gallery-carousel"
-  aria-label="image carousel"
-  style="border-radius: 20px;"
->
-  <div class="slides" aria-live="off"></div>
-  <h3 class="title"></h3>
-  <a
-    class="prev"
-    aria-controls="blueimp-gallery-carousel"
-    aria-label="previous slide"
-  ></a>
-  <a
-    class="next"
-    aria-controls="blueimp-gallery-carousel"
-    aria-label="next slide"
-  ></a>
-  <a
-    class="play-pause"
-    aria-controls="blueimp-gallery-carousel"
-    aria-label="play slideshow"
-    aria-pressed="true"
-    role="button"
-  ></a>
-  <ol class="indicator"></ol>
-</div>		
+		<!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+		<div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel" aria-label="image carousel" style="border-radius: 20px;">
+			<div class="slides" aria-live="off"></div>
+			<h3 class="title"></h3>
+			<a class="prev" aria-controls="blueimp-gallery-carousel" aria-label="previous slide" ></a>
+			<a class="next" aria-controls="blueimp-gallery-carousel" aria-label="next slide"></a>
+			<a class="play-pause" aria-controls="blueimp-gallery-carousel" aria-label="play slideshow" aria-pressed="true" role="button"></a>
+			<ol class="indicator"></ol>
+		</div>		
 		<br>
 		<div class="about">
 			<div class="about__divider">*****</div>
@@ -48,12 +29,11 @@ Vidinis vaikas auga mumyse nuo pirmųjų dienų po atsiradimo šiame pasaulyje, 
 </div>
 
 <div id="links">
-  <a href="/assets/img/index_old.jpg" title="Lonely tree" />
-  <a href="/assets/img/index.jpg" title="Talk to me" />
+  <a href="/assets/img/index-gallery/1.jpg" />
+  <a href="/assets/img/index-gallery/2.jpg" />
 </div>
 
 <script src="/assets/vendor/gallery-master/js/blueimp-gallery.min.js"></script>
-
 <script>
   document.getElementById('links').onclick = function (event) {
     event = event || window.event
@@ -63,9 +43,7 @@ Vidinis vaikas auga mumyse nuo pirmųjų dienų po atsiradimo šiame pasaulyje, 
     var links = this.getElementsByTagName('a')
     blueimp.Gallery(links, options)
   }
-</script>
-
-<script>
+  
   blueimp.Gallery(document.getElementById('links').getElementsByTagName('a'), {
     container: '#blueimp-gallery-carousel',
     carousel: true
