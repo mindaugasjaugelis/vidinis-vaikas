@@ -41,18 +41,9 @@
     localStorage.clear();
   }
 
-  function blinkText(containerClass) {
-    $('.' + containerClass).fadeOut(500);
-    $('.' + containerClass).fadeIn(500);
-  }
-
   $(document).ready(function () {
     clearCookies();
     clearLocalStorage();
-
-    setInterval(function() {
-      blinkText('subheader-note');
-    }, 1650);
   });
 </script>
 
